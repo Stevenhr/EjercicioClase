@@ -5,7 +5,7 @@ public class Publicidad extends JPanel{
 	public Publicidad() {
 		  setLayout( new BorderLayout());
 	        JLabel imagen = new JLabel();
-	        ImageIcon icono = new ImageIcon( "img/econo.jpg" );
+	        ImageIcon icono = new ImageIcon( "img/images.jpg" );
 	        imagen.setIcon( icono );
 	        imagen.setHorizontalAlignment( JLabel.CENTER );
 	        add( imagen, BorderLayout.CENTER );
