@@ -17,8 +17,8 @@ public class RegistroUsuario extends JPanel{
 		
 		JTextField cedula1=new JTextField();
 		contenido.fill=GridBagConstraints.HORIZONTAL;
-		contenido .gridx = 0;
-		contenido .gridy = 1;
+		contenido .gridx = 1;
+		contenido .gridy = 0;
 		add(cedula1, contenido);
 		
 		JLabel nombre= new JLabel("NOMBRE");
@@ -60,18 +60,23 @@ public class RegistroUsuario extends JPanel{
 		JLabel direccion= new JLabel("TELEFONO");
 		contenido .fill = GridBagConstraints.HORIZONTAL;
 		contenido .gridx = 0;
-		contenido .gridy = 5;
+		contenido .gridy = 4;
 		add(direccion, contenido);
 		
-		JTextField direccion1=new JTextField();
-		
-		
+		JTextField direccion1=new JTextField();		
 		JButton registrar=new JButton("REGISTRAR");
 		contenido.fill=GridBagConstraints.HORIZONTAL;
 		contenido .gridx = 1;
-		contenido .gridy = 5;
+		contenido .gridy = 4;
 		add(registrar, contenido);
 		
+		
+		JButton mostrar = new JButton();
+		mostrar.setText("BUSCAR");
+		contenido.fill = GridBagConstraints.HORIZONTAL;	
+		contenido.gridx = 0;
+		contenido.gridy = 5;
+		add(mostrar, contenido);
 		
 		
 		
