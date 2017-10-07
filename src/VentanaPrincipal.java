@@ -6,6 +6,7 @@ import javax.swing.*;
 public class VentanaPrincipal extends JFrame {
 	RegistroUsuario regis;
 	Publicidad pub;
+	PanelTabla tabla;
 	public ArrayList<Persona>  listaPersonas;
 	public VentanaPrincipal() {
         this("Demo");
@@ -14,7 +15,7 @@ public class VentanaPrincipal extends JFrame {
     public VentanaPrincipal(String titulo) {
         super(titulo);
 
-        this.iniciar(); // Configurar mi JFRAME
+        this.iniciar(); 
         this.configurarComponentes();
 
         this.pack();
@@ -40,7 +41,10 @@ public class VentanaPrincipal extends JFrame {
     	add(pub, BorderLayout.NORTH);
     	
         RegistroUsuario regis = new RegistroUsuario();
-        add(regis, BorderLayout.CENTER);
+        add(regis, BorderLayout.WEST);
+        
+        PanelTabla tabla = new PanelTabla();
+        add(tabla, BorderLayout.CENTER);
     }
     
     

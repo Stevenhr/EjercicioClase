@@ -19,7 +19,7 @@ public class PanelTabla extends JPanel{
 			tabla.addColumn(columna1);
 		}
 		this.add(tablaPersonas);
-		//setBorder( new TitledBorder( "Panel tabla" ) );
-        //setLayout( new GridLayout( 1, 1 ) );
+		setBorder( new TitledBorder( "Panel tabla" ) );
+        setLayout( new GridLayout( 1, 1 ) );
 	}
 }
