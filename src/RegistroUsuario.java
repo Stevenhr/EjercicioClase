@@ -57,26 +57,28 @@ public class RegistroUsuario extends JPanel{
 		contenido .gridy = 3;
 		add(telefono1, contenido);
 		
-		JLabel direccion= new JLabel("TELEFONO");
+		JLabel direccion= new JLabel("DIRECCION");
 		contenido .fill = GridBagConstraints.HORIZONTAL;
 		contenido .gridx = 0;
 		contenido .gridy = 4;
 		add(direccion, contenido);
 		
-		JTextField direccion1=new JTextField();		
+		JTextField direccion1=new JTextField();
+		contenido .fill = GridBagConstraints.HORIZONTAL;
+		contenido .gridx = 1;
+		contenido .gridy = 4;
+		add(direccion1, contenido);
+		
+		
+		
 		JButton registrar=new JButton("REGISTRAR");
 		contenido.fill=GridBagConstraints.HORIZONTAL;
 		contenido .gridx = 1;
-		contenido .gridy = 4;
+		contenido .gridy = 5;
 		add(registrar, contenido);
 		
 		
-		JButton mostrar = new JButton();
-		mostrar.setText("BUSCAR");
-		contenido.fill = GridBagConstraints.HORIZONTAL;	
-		contenido.gridx = 0;
-		contenido.gridy = 5;
-		add(mostrar, contenido);
+	
 		
 		
 		
