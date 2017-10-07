@@ -1,9 +1,12 @@
 import java.awt.*;
+import java.util.ArrayList;
+
 import javax.swing.*;
 
 public class VentanaPrincipal extends JFrame {
 	RegistroUsuario regis;
 	Publicidad pub;
+	ArrayList  listaPersonas;
 	public VentanaPrincipal() {
         this("Demo");
     }
@@ -16,6 +19,10 @@ public class VentanaPrincipal extends JFrame {
 
         this.pack();
         this.setVisible(true);
+        
+        listaPersonas = new ArrayList<Persona>();
+        
+        
     }
 
     private VentanaPrincipal iniciar() {

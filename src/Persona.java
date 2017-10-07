@@ -1,6 +1,6 @@
 
 public class Persona {
-	private String nombre_usuario;
+	private String name;
 	private String apellido;
 	private String telefono;
 	private int cedula;
@@ -14,14 +14,17 @@ public class Persona {
 		this.setCedula(cedula);
 		this.setDireccion(direccion);
 		
+		
+		
+		
 	}
 
 	public String getNombre() {
-		return nombre_usuario;
+		return name;
 	}
 
 	public void setNombre(String nombre) {
-		this.nombre_usuario = nombre;
+		this.name = nombre;
 	}
 
 	public String getApellido() {
