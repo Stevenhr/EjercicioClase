@@ -2,7 +2,8 @@ import java.awt.*;
 import javax.swing.*;
 
 public class VentanaPrincipal extends JFrame {
-	
+	RegistroUsuario regis;
+	Publicidad pub;
 	public VentanaPrincipal() {
         this("Demo");
     }
@@ -22,13 +23,16 @@ public class VentanaPrincipal extends JFrame {
         this.setSize(dims);
         this.setPreferredSize(dims);
         this.getContentPane().setLayout(new BorderLayout());
-        this.getContentPane().setBackground(Color.black);
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-
+        setLocationRelativeTo(null);
         return this;
     }
 
     private void configurarComponentes() {
-        
+    	Publicidad pub = new Publicidad();
+    	add(pub, BorderLayout.NORTH);
+    	
+        RegistroUsuario regis = new RegistroUsuario();
+        add(regis, BorderLayout.CENTER);
     }
 }
