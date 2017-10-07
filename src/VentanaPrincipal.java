@@ -6,7 +6,7 @@ import javax.swing.*;
 public class VentanaPrincipal extends JFrame {
 	RegistroUsuario regis;
 	Publicidad pub;
-	ArrayList  listaPersonas;
+	public ArrayList<Persona>  listaPersonas;
 	public VentanaPrincipal() {
         this("Demo");
     }
@@ -41,5 +41,12 @@ public class VentanaPrincipal extends JFrame {
     	
         RegistroUsuario regis = new RegistroUsuario();
         add(regis, BorderLayout.CENTER);
+    }
+    
+    
+    public void registroPersona(int _cedula, String _nombre, String _apellido, String _direccion, String _telefono) {
+    	Persona obj = new Persona(_nombre, _apellido, _telefono, _cedula, _direccion);
+    	listaPersonas.add(obj);
+    	
     }
 }
